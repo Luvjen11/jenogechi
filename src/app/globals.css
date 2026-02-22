@@ -1,0 +1,21 @@
+:root {
+  --pink: #e9d0d6;
+  --brown: #452205;
+  --cream: #faf6ea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--brown);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}

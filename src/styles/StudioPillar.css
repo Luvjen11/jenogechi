@@ -1,0 +1,205 @@
+.pillars-section {
+  padding: 120px 60px;
+  background: var(--pink);
+}
+
+/* Title */
+.pillars-label {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pillars-label h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  color: var(--brown);
+  margin: 0;
+}
+
+/* Container */
+.pillars-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 3 post-its side-by-side */
+.pillars-stack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.postit {
+  position: relative;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+  transition: transform 0.25s ease;
+}
+
+/* Slight handmade rotation */
+.postit-1 {
+  transform: rotate(-0.3deg);
+}
+.postit-2 {
+  transform: rotate(0.2deg);
+}
+.postit-3 {
+  transform: rotate(-0.15deg);
+}
+
+.postit:hover {
+  transform: translateY(-6px) rotate(0deg);
+}
+
+/* Frame controls the size and stacking layers */
+.postit-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+/* PNG layer */
+.postit-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Text overlay layer */
+.postit-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  /* Padding INSIDE the post-it */
+  padding: 150px 38px 38px;
+  display: grid;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+/* Title + badge row */
+.postit-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.postit-title {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--brown);
+  margin: 0;
+}
+
+.postit-badge {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(69, 34, 5, 0.08);
+  color: var(--brown);
+  white-space: nowrap;
+}
+
+/* Subtitle + desc */
+.postit-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  color: rgba(69, 34, 5, 0.75);
+  margin: 0;
+}
+
+.postit-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(69, 34, 5, 0.92);
+  margin: 0;
+}
+
+/* Link */
+.postit-link {
+  margin-top: 6px;
+  width: fit-content;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: var(--brown);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(69, 34, 5, 0.35);
+  padding-bottom: 2px;
+  transition: opacity 0.25s ease;
+}
+
+.postit-link:hover {
+  opacity: 0.7;
+}
+
+/* Optional: if the center post-it is dark brown and text becomes unreadable */
+.postit-2 .postit-title,
+.postit-2 .postit-subtitle,
+.postit-2 .postit-desc,
+.postit-2 .postit-link {
+  color: #faf6ea;
+}
+
+.postit-2 .postit-badge {
+  background: rgba(250, 246, 234, 0.18);
+  color: #faf6ea;
+}
+
+.postit-2 .postit-link {
+  border-bottom: 1px solid rgba(250, 246, 234, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .pillars-section {
+    padding: 90px 20px;
+  }
+
+  .pillars-label h1 {
+    font-size: 34px;
+  }
+
+  .pillars-stack {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .postit-frame {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .postit-content {
+    padding: 54px 24px 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .postit-title {
+    font-size: 22px;
+  }
+
+  .postit-desc {
+    font-size: 14px;
+  }
+
+  .postit-content {
+    padding: 52px 20px 20px;
+  }
+}

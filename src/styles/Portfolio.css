@@ -1,0 +1,250 @@
+.projectsTabs {
+  padding: 110px 60px;
+  background: var(--cream);
+}
+
+.projectsTabs__header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+
+.projectsTabs__title {
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
+  color: var(--brown);
+  margin: 0 0 8px;
+}
+
+.projectsTabs__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: rgba(69, 34, 5, 0.75);
+  margin: 0;
+}
+
+/* Folder container */
+.folder {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Tabs row */
+.folder__tabs {
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+  padding-left: 6px;
+}
+
+/* Base tab */
+.tab {
+  border: 1.5px solid rgba(69, 34, 5, 0.85);
+  border-bottom: none;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  padding: 14px 22px 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transform: translateY(2px);
+  transition:
+    transform 0.18s ease,
+    filter 0.18s ease;
+}
+
+/* your colors (feel free to swap) */
+.tab1 {
+  background: var(--pink);
+}
+.tab2 {
+  background: var(--brown); 
+}
+.tab3 {
+  background: var(--pink); 
+}
+
+/* Active tab sits “in front” */
+.tab.isActive {
+  transform: translateY(0);
+  filter: saturate(1.05);
+}
+
+/* Panel wrapper (big rounded rectangle) */
+.folder__panel {
+  border: 1.5px solid rgba(69, 34, 5, 0.85);
+  border-radius: 18px;
+  background: #b9d4ff; /* soft blue like the example */
+  padding: 60px 56px;
+}
+
+/* Content layout */
+.panel {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 46px;
+  align-items: center;
+}
+
+.panel__title {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  color: var(--brown);
+  margin: 0 0 10px;
+}
+
+.panel__meta {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(69, 34, 5, 0.72);
+  margin-bottom: 14px;
+}
+
+.panel__desc {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(69, 34, 5, 0.9);
+  margin: 0 0 18px;
+  max-width: 60ch;
+}
+
+.panel__list {
+  margin: 0 0 22px;
+  padding-left: 18px;
+  color: rgba(69, 34, 5, 0.9);
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+}
+
+.panel__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cream);
+  border: 1.5px solid rgba(69, 34, 5, 0.9);
+  color: var(--brown);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    opacity 0.18s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Image side */
+.panel__imageFrame {
+  position: relative;
+  background: rgba(250, 246, 234, 0.9);
+  border: 1.5px solid rgba(69, 34, 5, 0.3);
+  border-radius: 16px;
+  padding: 18px;
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+}
+
+.panel__image {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Placeholder if you don’t have an image */
+.panel__placeholder {
+  font-family: "Inter", sans-serif;
+  color: rgba(69, 34, 5, 0.7);
+  text-align: center;
+  padding: 20px;
+}
+
+/* cute paperclip */
+.paperclip {
+  position: absolute;
+  top: -14px;
+  right: 22px;
+  width: 22px;
+  height: 54px;
+  border: 2px solid rgba(69, 34, 5, 0.35);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: transparent;
+  transform: rotate(12deg);
+}
+
+/* footer links under folder */
+.folder__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 6px 0;
+}
+
+.tinyLink {
+  font-family: "Inter", sans-serif;
+  color: rgba(69, 34, 5, 0.75);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(69, 34, 5, 0.25);
+  padding-bottom: 2px;
+}
+.tinyLink:hover {
+  color: rgba(69, 34, 5, 1);
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .projectsTabs {
+    padding: 90px 20px;
+  }
+
+  .projectsTabs__title {
+    font-size: 38px;
+  }
+
+  .folder__panel {
+    padding: 44px 22px;
+  }
+
+  .panel {
+    grid-template-columns: 1fr;
+  }
+
+  .panel__title {
+    font-size: 36px;
+  }
+
+  .folder__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .tab {
+    padding: 12px 14px 10px;
+    font-size: 12px;
+  }
+}

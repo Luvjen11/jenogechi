@@ -1,35 +1,116 @@
 .navbar {
-    background-color: var(--cream);
-    padding: 24px 60px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  background-color: var(--cream);
+  padding: 24px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: var(--brown);
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
+/* Hamburger: hidden on desktop */
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--brown);
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  top: 72px;
+  background: var(--cream);
+  padding: 24px;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.navbar-mobile-menu--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.navbar-mobile-nav a {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--brown);
+  padding: 8px 0;
+}
+
+.navbar-mobile-nav a:hover {
+  opacity: 0.7;
+}
+
+/* Mobile: show hamburger, hide desktop nav */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 24px;
   }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-  
+
   .nav-links {
+    display: none;
+  }
+
+  .navbar-hamburger {
     display: flex;
-    gap: 40px;
   }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: var(--brown);
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: opacity 0.3s ease;
+
+  .navbar-mobile-menu {
+    display: block;
   }
-  
-  .nav-links a:hover {
-    opacity: 0.6;
-  }
+}

@@ -56,15 +56,23 @@
     filter 0.18s ease;
 }
 
-/* your colors (feel free to swap) */
+/* Tab colors – theme: cream, brown, pink */
+.tab {
+  color: var(--brown);
+}
 .tab1 {
   background: var(--pink);
 }
 .tab2 {
-  background: var(--brown); 
+  background: var(--brown);
+  color: var(--cream);
 }
 .tab3 {
-  background: var(--pink); 
+  background: var(--pink);
+}
+.tab4 {
+  background: var(--brown);
+  color: var(--cream);
 }
 
 /* Active tab sits “in front” */
@@ -77,8 +85,9 @@
 .folder__panel {
   border: 1.5px solid rgba(69, 34, 5, 0.85);
   border-radius: 18px;
-  background: #b9d4ff; /* soft blue like the example */
+  background: var(--cream);
   padding: 60px 56px;
+  box-shadow: 0 2px 0 rgba(69, 34, 5, 0.06);
 }
 
 /* Content layout */
@@ -154,8 +163,8 @@
 /* Image side */
 .panel__imageFrame {
   position: relative;
-  background: rgba(250, 246, 234, 0.9);
-  border: 1.5px solid rgba(69, 34, 5, 0.3);
+  background: rgba(233, 208, 214, 0.35);
+  border: 1.5px solid rgba(69, 34, 5, 0.2);
   border-radius: 16px;
   padding: 18px;
   min-height: 320px;
@@ -212,6 +221,23 @@
 }
 .tinyLink:hover {
   color: rgba(69, 34, 5, 1);
+}
+
+.portfolio-dev-btn {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: var(--brown);
+  color: var(--cream);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.portfolio-dev-btn:hover {
+  background: #5d2d0c;
 }
 
 /* Responsive */

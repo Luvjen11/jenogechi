@@ -1,4 +1,4 @@
-import "../styles/Hero.css";
+import "../../styles/Hero.css";
 
 export default function Hero() {
   return (
@@ -13,23 +13,18 @@ export default function Hero() {
             <br />
             and document the journey.
           </h1>
-            {/* <h1>JENOGECHI STUDIO</h1>
-            <p className="hero-description">I run a creative studio where I build digital products
-            and document the journey into the digital world.</p> */}
 
           <p className="hero-description">
             A creative studio where web development, storytelling,
             and experimentation meet.
           </p>
 
-          <button className="hero-button">
-            <a href="/contact">Work with me</a>
-          </button>
+          <a href="/contact" className="hero-button hero-button-primary">Work with me</a>
         </div>
 
         <div className="hero-right">
           <div className="image-placeholder">
-            Find image to add
+            <img src="/images/hero-image.jpg" alt="Hero Image" width={320} height={420} />
           </div>
         </div>
 

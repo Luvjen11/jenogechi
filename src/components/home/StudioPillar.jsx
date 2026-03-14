@@ -1,4 +1,4 @@
-import "../styles/StudioPillar.css";
+import "../../styles/StudioPillar.css";
 
 export default function StudioPillar() {
   const services = [
@@ -28,7 +28,7 @@ export default function StudioPillar() {
   return (
     <section className="pillars-section">
       <div className="pillars-label">
-        <h1>STUDIO PILLARS</h1>
+        <h2 className="pillars-title">What I build</h2>
       </div>
       <div className="pillars-inner">
         <div className="pillars-stack">
@@ -54,6 +54,7 @@ export default function StudioPillar() {
             </article>
           ))}
         </div>
+        <a href="/services" className="pillars-cta">Explore services →</a>
       </div>
     </section>
   );

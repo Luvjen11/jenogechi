@@ -1,0 +1,56 @@
+.about-snippet {
+  padding: 90px 60px;
+  background: var(--pink);
+  text-align: center;
+}
+
+.snippet-label {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(69, 34, 5, 0.65);
+  margin-bottom: 12px;
+}
+
+.snippet-title {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--brown);
+  margin-bottom: 16px;
+}
+
+.snippet-text {
+  max-width: 640px;
+  margin: 0 auto 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(69, 34, 5, 0.88);
+}
+
+.snippet-cta {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brown);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(69, 34, 5, 0.35);
+  padding-bottom: 2px;
+  transition: opacity 0.25s ease;
+}
+
+.snippet-cta:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .about-snippet {
+    padding: 60px 20px;
+  }
+
+  .snippet-title {
+    font-size: 34px;
+  }
+}

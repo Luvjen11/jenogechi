@@ -1,0 +1,80 @@
+.how-i-work {
+  padding: 90px 60px;
+  background: var(--cream);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.how-label {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(69, 34, 5, 0.65);
+  margin-bottom: 12px;
+}
+
+.how-title {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--brown);
+  margin-bottom: 40px;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.how-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.how-num {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: var(--pink);
+  border: 2px solid rgba(69, 34, 5, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--brown);
+}
+
+.how-step h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--brown);
+}
+
+.how-step p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(69, 34, 5, 0.88);
+}
+
+@media (max-width: 900px) {
+  .how-i-work {
+    padding: 60px 20px;
+  }
+
+  .how-title {
+    font-size: 34px;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+}

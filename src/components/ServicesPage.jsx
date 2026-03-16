@@ -45,7 +45,7 @@ export default function ServicesPage() {
         <div className="service-inner">
           <p className="section-label">01</p>
           <h2>Landing Pages</h2>
-          <p className="service-price">From £500 depending on scope</p>
+          <p className="service-price">From £150 depending on scope</p>
           <p className="service-timeline">Timeline: 1–2 weeks</p>
           <p className="service-intro">
             Perfect for launches, products, waitlists, or offers.
@@ -89,7 +89,7 @@ export default function ServicesPage() {
         <div className="service-inner">
           <p className="section-label">02</p>
           <h2>Websites</h2>
-          <p className="service-price">From £900 depending on scope</p>
+          <p className="service-price">From £300 depending on scope</p>
           <p className="service-timeline">Timeline: 2–4 weeks</p>
           <p className="service-intro">
             For personal brands, creators, and small businesses.
@@ -129,7 +129,7 @@ export default function ServicesPage() {
         <div className="service-inner">
           <p className="section-label">03</p>
           <h2>MVP Builds</h2>
-          <p className="service-price">From £1,500 depending on scope</p>
+          <p className="service-price">From £500 depending on scope</p>
           <p className="service-timeline">Timeline: 4–8 weeks</p>
           <p className="service-intro">
             For founders testing ideas or building early products.

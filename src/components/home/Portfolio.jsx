@@ -21,7 +21,7 @@ export default function Portfolio() {
         image: "/images/work/lov3d.png",
         links: [
           { label: "Visit lov3d.io", href: "https://lov3d.io/" },
-          { label: "Work page", href: "/work" },
+          { label: "View case study", href: "/work" },
         ],
       },
       {
@@ -40,7 +40,7 @@ export default function Portfolio() {
         image: "/images/work/yv-yoga.png",
         links: [
           { label: "Visit yogayv.com", href: "https://www.yogayv.com/" },
-          { label: "Work page", href: "/work" },
+          { label: "View case study", href: "/work" },
         ],
       },
       {
@@ -59,7 +59,7 @@ export default function Portfolio() {
         image: "/images/work/digital-jewelry.png",
         links: [
           { label: "Visit DJW", href: "https://djwxlov3d.vercel.app/" },
-          { label: "Work page", href: "/work" },
+          { label: "View case study", href: "/work" },
         ],
       },
       {
@@ -78,7 +78,7 @@ export default function Portfolio() {
         image: "/images/work/ntughari.png",
         links: [
           { label: "Visit ntughari.vercel.app", href: "https://ntughari.vercel.app/" },
-          { label: "Work page", href: "/work" },
+          { label: "View case study", href: "/work" },
         ],
       },
     ],

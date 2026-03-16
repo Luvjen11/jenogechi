@@ -7,6 +7,12 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
+        "Working with Jennifer it was an easy and smooth experience, she is very knowledgeable and focused on learning all new tools.",
+      name: "Dario Rjeili",
+      role: "Digital Jewelry Week, LOV3D",
+    },
+    {
+      quote:
         "Jennifer built a beautiful and clean website that perfectly represents my brand.",
       name: "Client Name",
       role: "Founder",
@@ -16,12 +22,6 @@ export default function Testimonials() {
         "Working with Jen was a great experience. She understood the vision immediately.",
       name: "Another Client",
       role: "Business Owner",
-    },
-    {
-      quote:
-        "She combines design and engineering which makes the final product feel very polished.",
-      name: "Startup Founder",
-      role: "Tech Founder",
     },
   ];
 

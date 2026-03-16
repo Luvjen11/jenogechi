@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Freelance Business Portfolio – Jenogechi Studio
 
-## Getting Started
+This repository contains my final project submission for the Solopreneur / Freelance Portfolio project.
 
-First, run the development server:
+The project demonstrates the creation of a freelance business portfolio including a personal brand, portfolio website, client acquisition strategy, and professional pitch.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 1. Brand Identity
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Jenogechi Studio is a freelance studio focused on helping founders, creators, and small businesses bring their ideas online through thoughtful digital products.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Services include:
 
-## Learn More
+- Landing pages
+- Websites
+- Early-stage MVP builds
 
-To learn more about Next.js, take a look at the following resources:
+The goal is to create digital experiences that clearly communicate ideas and help businesses establish a professional online presence.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 2. Digital Presence
 
-## Deploy on Vercel
+Portfolio Website:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://www.jenogechi.com/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The website showcases:
+
+- services offered
+- portfolio projects
+- testimonials
+- contact and discovery call options
+
+The website was built using modern web technologies and designed to convert potential clients.
+
+---
+
+## 3. Portfolio Projects
+
+Selected work included in the portfolio:
+
+- LOV3D – digital platform supporting interactive exhibitions
+- Digital Jewelry Week – online event platform
+- YV Yoga – website for yoga and wellness services
+- Ntughari – concept web application
+
+These projects demonstrate my ability to design and build digital products from concept to implementation.
+
+---
+
+## 4. Video Pitch
+
+A 2-minute professional pitch explaining my freelance business and value proposition.
+
+Location:
+cbfSubmission/
+
+
+---
+
+## 5. Client Acquisition Strategy
+
+The project includes a documented **6-month client acquisition plan** outlining how Jenogechi Studio will grow its freelance client base.
+
+The strategy focuses on:
+
+- building a strong portfolio
+- networking with founders and small businesses
+- sharing projects and development work publicly
+- creating partnerships and referral opportunities
+
+Files are located in:
+cbfSubmission/
+
+
+The working version of the plan is maintained in Notion.
+
+---
+
+## 6. Presentation
+
+A presentation summarizing the freelance business, portfolio work, and growth strategy is included in the repository.
+
+Location:
+cbfSubmission/
+
+---
+
+## Summary
+
+This project demonstrates:
+
+- brand identity development
+- portfolio website creation
+- technical implementation
+- client acquisition strategy
+- content and business positioning
+
+The goal is to establish Jenogechi Studio as a freelance studio capable of delivering value to founders, creators, and small businesses.

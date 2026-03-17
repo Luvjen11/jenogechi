@@ -1,13 +1,8 @@
-"use client";
-
 import "../styles/Footer.css";
+import { MAILCHIMP_SUBSCRIBE_ACTION } from "@/lib/mailchimp";
+import MailchimpHoneypot from "@/components/MailchimpHoneypot";
 
 export default function Footer() {
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    // Mailchimp / API integration later
-  };
-
   return (
     <footer className="site-footer">
       <div className="footer-newsletter">
@@ -20,13 +15,26 @@ export default function Footer() {
           </p>
         </div>
 
-        <form className="footer-form" onSubmit={handleNewsletterSubmit}>
+        <form
+          className="footer-form"
+          action={MAILCHIMP_SUBSCRIBE_ACTION}
+          method="post"
+          target="_blank"
+        >
           <input
             type="email"
+            name="EMAIL"
+            id="mce-EMAIL-footer"
             placeholder="Enter your email"
             aria-label="Email address"
+            required
+            autoComplete="email"
+            className="required email"
           />
-          <button type="submit">Join</button>
+          <MailchimpHoneypot />
+          <button type="submit" name="subscribe">
+            Join
+          </button>
         </form>
       </div>
 
@@ -55,9 +63,6 @@ export default function Footer() {
           <a href="https://www.youtube.com/@jenogechiYT" target="_blank" rel="noreferrer">
             YouTube
           </a>
-          {/* <a href="https://instagram.com" target="_blank" rel="noreferrer">
-            Instagram
-          </a> */}
         </div>
       </div>
 

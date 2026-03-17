@@ -1,13 +1,8 @@
-"use client";
-
 import "../styles/ContentPage.css";
+import { MAILCHIMP_SUBSCRIBE_ACTION } from "@/lib/mailchimp";
+import MailchimpHoneypot from "@/components/MailchimpHoneypot";
 
 export default function ContentPage() {
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    // Mailchimp integration later
-  };
-
   const latestItems = [
     {
       title: "Building my portfolio as a CS student",
@@ -122,13 +117,26 @@ export default function ContentPage() {
             <br />
             No spam. Just ideas.
           </p>
-          <form className="newsletter-form" onSubmit={handleNewsletterSubmit}>
+          <form
+            className="newsletter-form"
+            action={MAILCHIMP_SUBSCRIBE_ACTION}
+            method="post"
+            target="_blank"
+          >
             <input
               type="email"
+              name="EMAIL"
+              id="mce-EMAIL-content"
               placeholder="Your email"
               aria-label="Email address"
+              required
+              autoComplete="email"
+              className="required email"
             />
-            <button type="submit">Subscribe</button>
+            <MailchimpHoneypot />
+            <button type="submit" name="subscribe">
+              Subscribe
+            </button>
           </form>
         </div>
       </section>

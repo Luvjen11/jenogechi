@@ -1,14 +1,13 @@
 "use client";
 
+import { useForm, ValidationError } from "@formspree/react";
 import "../styles/ContactPage.css";
 
 const CALENDLY_URL = "https://calendly.com/aestheticjenny04/30min";
+const FORMSPREE_FORM_ID = "xojkpyqr";
 
 export default function ContactPage() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Form backend / email service integration later
-  };
+  const [state, handleSubmit] = useForm(FORMSPREE_FORM_ID);
 
   return (
     <main className="contact-page">
@@ -63,6 +62,11 @@ export default function ContactPage() {
             A few details and I&apos;ll know where to start.
           </p>
 
+          {state.succeeded ? (
+            <div className="contact-form-success">
+              <p>Thanks for your message! I&apos;ll get back to you soon.</p>
+            </div>
+          ) : (
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <label htmlFor="name">Name</label>
@@ -72,6 +76,7 @@ export default function ContactPage() {
             <div className="form-row">
               <label htmlFor="email">Email</label>
               <input type="email" id="email" name="email" placeholder="Your email" required />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
 
             <div className="form-row">
@@ -92,6 +97,7 @@ export default function ContactPage() {
                 rows={5}
                 placeholder="Tell me a bit about the project and what you need."
               />
+              <ValidationError prefix="Message" field="help" errors={state.errors} />
             </div>
 
             <div className="form-row two-col">
@@ -106,10 +112,11 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <button type="submit" className="contact-submit">
-              Send enquiry
+            <button type="submit" className="contact-submit" disabled={state.submitting}>
+              {state.submitting ? "Sending…" : "Send enquiry"}
             </button>
           </form>
+          )}
         </div>
       </section>
 

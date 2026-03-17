@@ -237,6 +237,27 @@
   background: #5d2d0c;
 }
 
+.contact-submit:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.contact-form-success {
+  padding: 24px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(69, 34, 5, 0.9);
+}
+
+.contact-form .form-row .error,
+.contact-form .error {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #b91c1c;
+  margin-top: 4px;
+}
+
 /* NOTE */
 .contact-note-section {
   padding: 0 60px 120px;

@@ -1,5 +1,7 @@
 # Freelance Business Portfolio – Jenogechi Studio
 
+**Live portfolio:** [https://www.jenogechi.com/](https://www.jenogechi.com/)
+
 This repository contains my final project submission for the Solopreneur / Freelance Portfolio project.
 
 The project demonstrates the creation of a freelance business portfolio including a personal brand, portfolio website, client acquisition strategy, and professional pitch.

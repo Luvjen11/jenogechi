@@ -56,8 +56,10 @@ These projects demonstrate my ability to design and build digital products from 
 
 A 2-minute professional pitch explaining my freelance business and value proposition.
 
-Location:
-cbfSubmission/
+
+https://github.com/user-attachments/assets/34c4f4ab-7609-4673-b136-dc59fda22cc9
+
+
 
 
 ---

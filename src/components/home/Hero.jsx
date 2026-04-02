@@ -15,8 +15,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-description">
-            A creative studio where web development, storytelling,
-            and experimentation meet.
+            Computer Science student. Developer. Moving into AI and data-led products.
           </p>
 
           <a href="/contact" className="hero-button hero-button-primary">Work with me</a>

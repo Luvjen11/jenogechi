@@ -11,18 +11,18 @@ export default function Testimonials() {
       name: "Dario Rjeili",
       role: "Digital Jewelry Week, LOV3D",
     },
-    {
-      quote:
-        "Jennifer built a beautiful and clean website that perfectly represents my brand.",
-      name: "Client Name",
-      role: "Founder",
-    },
-    {
-      quote:
-        "Working with Jen was a great experience. She understood the vision immediately.",
-      name: "Another Client",
-      role: "Business Owner",
-    },
+    // {
+    //   quote:
+    //     "Jennifer built a beautiful and clean website that perfectly represents my brand.",
+    //   name: "Client Name",
+    //   role: "Founder",
+    // },
+    // {
+    //   quote:
+    //     "Working with Jen was a great experience. She understood the vision immediately.",
+    //   name: "Another Client",
+    //   role: "Business Owner",
+    // },
   ];
 
   const [current, setCurrent] = useState(0);

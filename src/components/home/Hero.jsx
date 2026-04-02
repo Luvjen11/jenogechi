@@ -9,9 +9,9 @@ export default function Hero() {
           <p className="studio-label">JENOGECHI STUDIO</p>
 
           <h1>
-            I build digital projects
+            I build websites, MVPs, and digital tools
             <br />
-            and document the journey.
+            for founders and small businesses.
           </h1>
 
           <p className="hero-description">

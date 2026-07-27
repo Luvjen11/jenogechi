@@ -42,6 +42,14 @@ export default function WorkPage() {
       image: "/images/work/ddweek.png",
       link: "https://www.ddweek.com/",
     },
+    {
+      title: "LU Hair Vision",
+      description:
+        "Luxury hair, braids, extensions, makeup artistry, and bridal booking experience. A multilingual website crafted to present premium services with strong storytelling, visual polish, and clear booking conversion.",
+      tags: ["Website", "Beauty", "Booking"],
+      image: "/images/work/luhairvision.png",
+      link: "https://luhairvision.vercel.app/en",
+    },
   ];
 
   const archiveProjects = [

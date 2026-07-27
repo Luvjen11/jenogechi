@@ -81,6 +81,25 @@ export default function Portfolio() {
           { label: "View case study", href: "/work" },
         ],
       },
+      {
+        id: "luhairvision",
+        tab: "LU Hair Vision",
+        accent: "tab5",
+        title: "LU Hair Vision",
+        subtitle: "Luxury Hair, Braids & Bridal",
+        description:
+          "LU Hair Vision is a luxury beauty brand site designed to feel elevated, elegant, and conversion-focused. It presents services, bridal experience, gallery highlights, and integrated booking in a seamless multilingual flow.",
+        highlights: [
+          "Multilingual experience (EN, IT, FR)",
+          "Service menu, bridal page, gallery, and booking flow",
+          "Luxury-first visual direction with conversion-focused sections",
+        ],
+        image: "/images/work/luhairvision.png",
+        links: [
+          { label: "Visit luhairvision", href: "https://luhairvision.vercel.app/en" },
+          { label: "View case study", href: "/work" },
+        ],
+      },
     ],
     []
   );

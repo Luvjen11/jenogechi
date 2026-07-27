@@ -74,6 +74,9 @@
   background: var(--brown);
   color: var(--cream);
 }
+.tab5 {
+  background: var(--pink);
+}
 
 /* Active tab sits “in front” */
 .tab.isActive {

@@ -9,15 +9,14 @@ export default function Hero() {
           <p className="studio-label">JENOGECHI STUDIO</p>
 
           <h1>
-            I build websites
-            <br /> 
-            and MVPs
+            Websites, landing pages, and MVPs
             <br />
-            for founders and small businesses.
+            — built to actually convert.
           </h1>
 
           <p className="hero-description">
-            Computer Science student. Developer. Moving into AI and data-led products.
+            I help founders, creators, and small businesses turn ideas
+            into structured, working products online.
           </p>
 
           <a href="/contact" className="hero-button hero-button-primary">Work with me</a>

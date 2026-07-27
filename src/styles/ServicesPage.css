@@ -276,6 +276,40 @@
   color: rgba(250, 246, 234, 0.9);
 }
 
+/* 6.5 FAQ */
+.faq-section {
+  padding: 90px 60px;
+  background: var(--pink);
+}
+
+.faq-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: rgba(69, 34, 5, 0.88);
+}
+
 /* 7. FINAL CTA */
 .services-final-cta {
   padding: 100px 60px 120px;
@@ -352,6 +386,7 @@
   .pillars-overview,
   .service-section,
   .process-section,
+  .faq-section,
   .services-final-cta {
     padding-left: 20px;
     padding-right: 20px;

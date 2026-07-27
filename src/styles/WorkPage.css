@@ -137,6 +137,12 @@
   color: rgba(69, 34, 5, 0.88);
 }
 
+.project-outcome {
+  font-weight: 600;
+  margin-top: 8px;
+  color: var(--brown) !important;
+}
+
 .project-meta {
   display: flex;
   flex-direction: column;

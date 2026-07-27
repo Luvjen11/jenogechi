@@ -63,6 +63,12 @@ export default function Footer() {
           <a href="https://www.youtube.com/@jenogechiYT" target="_blank" rel="noreferrer">
             YouTube
           </a>
+          <a href="https://www.tiktok.com/@selfsaga" target="_blank" rel="noreferrer">
+            TikTok (@selfsaga)
+          </a>
+          <a href="https://www.tiktok.com/@jenogechi" target="_blank" rel="noreferrer">
+            TikTok (@jenogechi)
+          </a>
         </div>
       </div>
 

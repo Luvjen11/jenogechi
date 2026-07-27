@@ -9,6 +9,12 @@ import ContentPreview from "@/components/home/ContentPreview";
 import Contact from "@/components/home/Contact";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "JenOgechi | Websites, Landing Pages & MVP Builds",
+  description:
+    "Jenogechi Studio — a developer building clean, conversion-focused websites, landing pages, and MVPs for founders, creators, and small businesses.",
+};
+
 export default function Home() {
   return (
     <div>

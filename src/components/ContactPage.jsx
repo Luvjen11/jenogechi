@@ -49,9 +49,9 @@ export default function ContactPage() {
             <a href="https://www.youtube.com/@jenogechiYT" target="_blank" rel="noreferrer">
               YouTube
             </a>
-            {/* <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              Instagram
-            </a> */}
+            <a href="https://www.tiktok.com/@jenogechi" target="_blank" rel="noreferrer">
+              TikTok
+            </a>
           </div>
         </div>
 
@@ -59,7 +59,8 @@ export default function ContactPage() {
           <p className="section-label">START HERE</p>
           <h2>Tell me a bit about your project</h2>
           <p className="form-intro">
-            A few details and I&apos;ll know where to start.
+            A few details and I&apos;ll know where to start. I usually reply
+            within two working days.
           </p>
 
           {state.succeeded ? (

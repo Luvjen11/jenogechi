@@ -75,9 +75,9 @@ export default function ServicesPage() {
           <div className="service-typical">
             <p className="typical-title">Typical clients</p>
             <ul>
-              <li>Startup founders</li>
-              <li>Personal brands</li>
-              <li>Small businesses</li>
+              <li>Founders launching something new</li>
+              <li>Creators promoting an offer or waitlist</li>
+              <li>Businesses running a specific campaign</li>
             </ul>
           </div>
           <a href="/contact" className="service-cta">Start a landing page →</a>
@@ -115,9 +115,9 @@ export default function ServicesPage() {
           <div className="service-typical">
             <p className="typical-title">Typical clients</p>
             <ul>
-              <li>Startup founders</li>
-              <li>Personal brands</li>
-              <li>Small businesses</li>
+              <li>Personal brands building credibility online</li>
+              <li>Small businesses that need a proper site, not a template</li>
+              <li>Creators consolidating their work in one place</li>
             </ul>
           </div>
           <a href="/contact" className="service-cta">Build my website →</a>
@@ -155,9 +155,9 @@ export default function ServicesPage() {
           <div className="service-typical">
             <p className="typical-title">Typical clients</p>
             <ul>
-              <li>Startup founders</li>
-              <li>Personal brands</li>
-              <li>Small businesses</li>
+              <li>Founders testing a new idea before committing further</li>
+              <li>Early-stage startups building pre-funding</li>
+              <li>Non-technical founders who need a technical co-builder</li>
             </ul>
           </div>
           <a href="/contact" className="service-cta">Discuss an MVP →</a>
@@ -197,6 +197,40 @@ export default function ServicesPage() {
                 <h3>Launch</h3>
                 <p>We test, refine, and publish your project.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6.5 FAQ */}
+      <section className="faq-section">
+        <div className="faq-inner">
+          <p className="section-label center">FAQ</p>
+          <h2>Questions people usually ask</h2>
+          <div className="faq-list">
+            <div className="faq-item">
+              <h3>How many revisions do I get?</h3>
+              <p>
+                Two rounds of revisions are included at each project stage.
+                Beyond that, extra changes are billed at an hourly rate we
+                agree on upfront.
+              </p>
+            </div>
+            <div className="faq-item">
+              <h3>What happens after launch?</h3>
+              <p>
+                You get a short handover call and a written guide to your
+                site or product. Ongoing support and small updates can be
+                arranged separately if you want them.
+              </p>
+            </div>
+            <div className="faq-item">
+              <h3>What do you need from me to start?</h3>
+              <p>
+                A clear idea of your goals, any existing brand assets (logo,
+                colours, copy), and examples of sites or products you like.
+                I&apos;ll fill in the gaps during discovery.
+              </p>
             </div>
           </div>
         </div>

@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import ContentPage from "@/components/ContentPage";
 
 export const metadata = {
-  title: "Content & Ideas | JenOgechi",
-  description: "Documenting what I'm building, learning, and experimenting with — tech projects, personal systems, and startup ideas.",
+  title: "Content | JenOgechi",
+  description: "Where I post — TikTok, YouTube, and updates on SelfSaga.",
 };
 
 export default function Content() {

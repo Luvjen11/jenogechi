@@ -62,10 +62,10 @@ export default function AboutPage() {
 
         <div className="story-visual">
           <div className="paper-card">
-            <pre>{`<div>
-  curiosity = true;
-  chaos = also true;
-</div>`}</pre>
+            <pre>{`const me = {
+  curiosity: true,
+  chaos: "also true",
+};`}</pre>
           </div>
         </div>
       </section>
@@ -148,10 +148,12 @@ export default function AboutPage() {
           <div className="timeline-item">
             <span className="timeline-dot"></span>
             <div className="timeline-content">
-              <h3>Bootcamps and hands-on experience</h3>
+              <h3>Community, conferences, and credentials</h3>
               <p>
-                I kept sharpening my skills through bootcamps, practical
-                projects, and building consistently.
+                I&apos;m a Coding Black Females ambassador, attended AWS Summit
+                London, competed in a hackathon, and I&apos;m currently working
+                toward my Azure certification — proof I put in the reps beyond
+                just tutorials.
               </p>
             </div>
           </div>

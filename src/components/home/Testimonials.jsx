@@ -17,6 +17,11 @@ export default function Testimonials() {
       name: "Yvonne Greaves",
       role: "YogaYV",
     },
+    {
+      quote: "Very useful!! And she is very professional!!",
+      name: "Lucrezia",
+      role: "LU Hair Vision",
+    },
   ];
 
   const [current, setCurrent] = useState(0);
